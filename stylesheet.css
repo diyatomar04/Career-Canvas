@@ -1,0 +1,207 @@
+*{
+    background-color: rgb(188, 238, 238);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    margin-right: 40%;
+    border-radius: 40px;
+}
+
+.contact-us, .login-button {
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.Contact{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    
+}
+
+.login{
+    height: 20px;
+    width: 20px;
+}
+
+.help {
+    display: none;
+    padding: 0px; 
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.contact-us{
+    position: relative;
+}
+
+.contact-us:hover .help{
+    display: inline-block;
+    width: 180px;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    margin-top: 2%;
+    height: 80vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.half {
+    flex: 1; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;   
+}
+
+.right {
+    background-color: #e0e0e0; 
+}
+
+.text1{
+        align-items: center;
+        background-color: #f0f0f0;
+        justify-content: center;
+        text-align: center;
+}
+
+h1.text1{
+    font-size: 50px;
+    margin: 20px;
+}
+
+h3.text1{
+    font-size: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #e0e0e0; 
+}
+
+.button-2   {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+
+.carousel-container {
+    background-color: rgb(15, 15, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 80%;
+    background-color: white;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.carousel-images img {
+    width: calc(100% / 5);
+    object-fit: cover;
+    border: 3px solid #000; /* Add a solid border */
+    height: 300px;
+    width: 250px;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 0;
+}
+
+.carousel-button.right {
+    right: 0;
+}
+
+
+.carousel-image{
+    margin-top: 5%;
+
+    margin-left: 7%;
+}
+
+.Container1{
+    background-color: rgb(15, 15, 129);
+    margin-top: 5%;
+    padding: 5%;
+}
+
+.Container1-text{
+    background-color: rgb(15, 15, 129);
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+}
+
+h1.Container1-text{
+    font-size: 50px;    
+}
