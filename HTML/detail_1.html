@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Header Page</title>
+
+        <style>
+            .mycontainer{
+                height:100%;
+                display: grid;
+                grid-template-columns: 18% 47% 35%;
+            }
+
+            form{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            #name, #contact, #place{
+                display:flex;
+                text-align:left;
+                font-size:12px;
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: 520;
+            }
+
+            input{
+                width:270px;
+                height:35px;
+                border:solid 1px;
+                border-radius:5px;
+                border-color: rgba(80, 80, 80, 0.479);
+                background-color: rgba(227, 246, 255, 0.249);
+                
+            }
+
+            button{
+                background-color: rgb(38, 63, 200);
+                color:white;
+                font-size: 25px;
+                font-weight: 550;
+                width:200px;
+                height:45px;
+                border:solid 1px;
+                border-radius:35px;
+                font-family:Arial, Helvetica, sans-serif;
+                margin-top:80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+            <div style="background-color:rgb(27, 15, 188); text-align:center; color:white; height: 100%;">
+              <h2>Career Canvas</h2>  
+              <p>HEADER</p><br>
+              <p>EXPERIENCE</p><br>
+
+              <p>EDUCATION</p><br>
+              <p>SKILLS</p><br>
+              <p>SUMMARY</p><br>
+              <p>OTHER SECTION</p>
+              <br>
+            </div>
+
+            <div style="text-align:center;">
+                <H1 style="font-size: 45px; margin-top: 80px; margin-left: -20px;">Let's start with your header!!</H1>
+                <form id="name">
+                  <p style="margin-left:60px;">  <label for="fname">FIRST NAME</label><br>
+                    <input type="text" id="fname" name="fname"> </p>
+
+                  <p style=" margin-left:60px;">   <label for="lname">LAST NAME</label><br>
+                    <input type="text" id="lname" name="lname"><br><br></p>
+
+                </form>
+
+                <form id="place">
+                    <p style="margin-left:60px;">  <label for="city">CITY</label><br>
+                      <input type="text" id="city" name="city"> </p>
+  
+                    <p style=" margin-left:60px; width:130px">   <label for="country">COUNTRY</label><br>
+                      <input style="width:125px;" type="text" id="country" name="country"><br><br></p>
+
+                    <p style=" margin-left:15px;">   <label for="pin">PIN CODE</label><br>
+                      <input style="width:125px;" type="text" id="pin" name="pin"><br><br></p>
+  
+                  </form>
+
+                  <form id="contact">
+                    <p style="margin-left:60px;">  <label for="phone">PHONE</label><br>
+                      <input type="text" id="phone" name="phone" required> </p>
+  
+                    <p style=" margin-left:60px;">   <label for="email">EMAIL</label><br>
+                      <input type="text" id="email" name="email" required></p>
+  
+                  </form>
+
+                  <button type="button">Continue</button>
+            </div>
+
+            <div style="background-color: antiquewhite;"> <h2>template</h2></div>
+        </div>
+    </body>
+</html>
