@@ -1,0 +1,142 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: change 8s infinite ease-in-out;
+    background-color: #f4f4f4; /* Background color */
+}
+
+@keyframes change {
+    0% {
+        background-image: url("images/img1.jpg");
+    }
+    25% {
+        background-image: url("images/img2.jpg");
+    }
+    50% {
+        background-image: url("images/img3.jpg");
+    }
+    75% {
+        background-image: url("images/img4.jpg");
+    }
+    100% {
+        background-image: url("images/img1.jpg");
+    }
+}
+
+/* Container for Centering Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+/* Collage Styling */
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 40px;
+    flex-direction: column; /* Added to enable vertical stacking */
+}
+
+.collage-img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin: 1%; /* Adjusted margin */
+    transition: transform 0.3s;
+}
+
+.collage-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Input Fields and Submit Button */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Social Login */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-btn.google {
+    background-color: #db4437;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .collage {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+/* Styling for Form Symbol Image */
+.form-symbol {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Adjust size */
+    height: auto;
+    margin-bottom: 20px;
+}
