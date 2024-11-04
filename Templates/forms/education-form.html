@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Resume Form</title>
+    <link rel="stylesheet" href="../css/education.css">
+</head>
+<body>
+    <h1>Education Resume Form</h1>
+    <form id="educationForm" action="../templates/education-template.html">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Title: <input type="text" name="title" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Phone: <input type="tel" name="phone" required></label><br>
+        <label>Teaching Skills: <textarea name="skills" required></textarea></label><br>
+        <label>Work Experience: <textarea name="experience" required></textarea></label><br>
+        <label>Education: <textarea name="education" required></textarea></label><br>
+        <label>Certifications: <textarea name="certifications"></textarea></label><br>
+        <button type="submit">Generate Resume</button>
+    </form>
+    <script src="../js/main.js"></script>
+</body>
+</html>
